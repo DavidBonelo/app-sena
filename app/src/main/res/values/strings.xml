@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Administrador de dinero</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo_sena">logo sena</string>
+    <string name="email">Correo electroonico</string>
+    <string name="login">Inicio de sesioon</string>
+    <string name="registrar">Registrar</string>
+    <string name="icono_contacto">icono contacto</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="telefono">Telefono</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="signin">Ingresar</string>
+</resources>
