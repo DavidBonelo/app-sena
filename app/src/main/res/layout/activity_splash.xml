@@ -4,40 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryLight"
     tools:context=".SplashActivity">
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
-
-
-        <ImageView
-            android:id="@+id/logo"
+        <LinearLayout
+            android:id="@+id/logo_full"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:contentDescription="@string/logo_sena"
-            android:orientation="vertical"
-            app:srcCompat="@drawable/logo_sena" />
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/logo_sena"
+                    app:srcCompat="@drawable/logo_budget" />
+
+                <ImageView
+                    android:id="@+id/img_name"
+                    android:layout_below="@id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/img_name" />
+
+
+        </LinearLayout>
+
+
 
         <ProgressBar
             android:id="@+id/pb"
+            android:layout_below="@id/logo_full"
+            android:layout_centerHorizontal="true"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/logo"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-
             android:indeterminate="false"
             android:max="100"
             android:minWidth="300dp"
             android:minHeight="50dp"
             android:progress="1"
-            android:progressTint="@color/colorAccent" />
-    </RelativeLayout>
+            android:progressTint="@color/complementary" />
 
 </RelativeLayout>

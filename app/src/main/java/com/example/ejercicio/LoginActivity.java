@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 444) {
+            // Si se completo el registro, finaliza login e inicia x pasando datos(un intent) del registro
             if (resultCode == RESULT_OK) {
                 finish();
                 startActivity(data);

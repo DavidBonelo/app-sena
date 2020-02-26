@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Ejercicio'
+rootProject.name='app-sena'

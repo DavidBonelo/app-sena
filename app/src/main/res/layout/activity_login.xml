@@ -1,66 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".LoginActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="30dp"
-        android:contentDescription="@string/logo_sena"
-        app:srcCompat="@drawable/logo_sena" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        />
-
-    <EditText
-        android:id="@+id/etmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="20dp"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/etpass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="20dp"
-        android:hint="@string/contrasenia"
-        android:inputType="textPassword" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="50dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".LoginActivity">
 
 
-    <Button
-        android:id="@+id/btnsignin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/signin" />
-    <Button
-        android:id="@+id/btnsignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/registrar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="16dp"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo_budget" />
+
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/img_name" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/contrasenia"
+            android:inputType="textPassword" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin" />
+
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registrar" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

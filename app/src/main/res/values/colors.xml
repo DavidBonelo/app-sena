@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#4489ff</color> <!-- -->
+    <color name="colorPrimaryLight">#83b8ff</color>
+    <color name="colorPrimaryDark">#005dcb</color>
     <color name="colorAccent">#FF5722</color>
     <color name="background">#8FCC8F</color>
+    <color name="complementary">#ffba44</color>
+    <color name="analogousOne">#44e6ff</color>
+    <color name="analogousTwo">#5d44ff</color>
+    <color name="triadicOne">#ba44ff</color>
+    <color name="triadicTwo">#ff4489</color>
+
 </resources>

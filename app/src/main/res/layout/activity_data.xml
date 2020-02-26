@@ -8,11 +8,24 @@
     tools:context=".DataActivity">
 
     <TextView
+        android:id="@+id/success_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Registro exitoso!"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
         android:id="@+id/tvdata"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/success_reg"
         android:textSize="25sp"
+        android:layout_marginTop="50dp"
         android:text="lorem"
         android:textColor="@color/colorPrimary"
         />
